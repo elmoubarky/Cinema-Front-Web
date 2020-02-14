@@ -22,8 +22,8 @@
             <div class="col-md-6">
             <div class="panel panel-default">
               <div class="panel-heading">{{s.name}}</div>
-                <div class="panel-body">
-
+                <div class="panel-body" *ngIf="s.projections" >
+                  <img src="{{cinemaService.host+'/imageFilm/'+s.projections._embedded.projections[0].film.id}}">
                 </div>
             </div>
             </div>
